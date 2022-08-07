@@ -1,0 +1,66 @@
+.home-container {
+  padding: 20px 4px;
+}
+
+.poster-container {
+  font-size: 12px;
+  transition: 0.5s;
+}
+.poster-container:hover {
+  transform: translateY(-4px);
+}
+
+.poster-imgcontainer {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.poster-imgcontainer:hover > .poster-img {
+  opacity: 0.3;
+}
+
+.poster-imgcontainer:hover > .poster-rating {
+  opacity: 1;
+}
+
+.poster-img {
+  height: 180px;
+  background-size: cover;
+  border-radius: 4px;
+  background-position: center center;
+  transition: opacity 0.1s linear;
+}
+
+.poster-rating {
+  bottom: 5px;
+  right: 5px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.poster-title {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.poster-year {
+  font-size: 10px;
+  color: rgba(225, 225, 255, 0.5);
+}
+
+.section-container:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-grid {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 125px);
+  grid-gap: 25px;
+}
